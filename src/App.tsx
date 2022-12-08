@@ -37,8 +37,6 @@ const App = () => {
               setHeightField(target.valueAsNumber /* +target.value */)
             }
           />
-        </div>
-        <div className={styles.rightSide}>
           <input
             type='number'
             placeholder='Digite o seu peso. Ex: 60.0 (em kg)'
@@ -48,6 +46,8 @@ const App = () => {
             }
           />
           <button onClick={handleCalculateButton}>Calcular</button>
+        </div>
+        <div className={styles.rightSide}>
         </div>
       </div>
     </div>
