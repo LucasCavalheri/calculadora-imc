@@ -1,7 +1,7 @@
 import { useState } from 'react';
+import { toast, Toaster } from 'react-hot-toast';
 import styles from './App.module.css';
 import leftArrowImage from './assets/leftarrow.png';
-import poweredImage from './assets/powered.png';
 import GridItem from './components/GridItem/GridItem';
 import { calculateImc, Level, levels } from './helpers/imc';
 
@@ -14,7 +14,7 @@ const App = () => {
     if (heightField && weightField) {
       setToShow(calculateImc(heightField, weightField));
     } else {
-      alert('Digite todos os campos.');
+      toast.error('Preencha todos os campos!');
     }
   };
 
@@ -26,9 +26,18 @@ const App = () => {
 
   return (
     <div className={styles.main}>
+      <Toaster position='top-center' reverseOrder={false} />
       <header>
         <div className={styles.headerContainer}>
-          <img src={poweredImage} alt='' width={150} />
+          <h3>
+            Feito por{' '}
+            <a
+              href='https://www.linkedin.com/in/lucas-cavalheri/'
+              target='_blank'
+            >
+              Lucas Cavalheri.
+            </a>
+          </h3>
         </div>
       </header>
       <div className={styles.container}>
@@ -57,7 +66,12 @@ const App = () => {
             }
             disabled={toShow ? true : false}
           />
-          <button onClick={handleCalculateButton} disabled={toShow ? true : false}>Calcular</button>
+          <button
+            onClick={handleCalculateButton}
+            disabled={toShow ? true : false}
+          >
+            Calcular
+          </button>
         </div>
         <div className={styles.rightSide}>
           {!toShow && (
