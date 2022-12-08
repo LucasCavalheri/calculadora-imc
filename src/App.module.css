@@ -8,7 +8,7 @@ body {
 
 .main {
   padding-bottom: 3.125rem;
-  margin-top: 12.5rem;
+  margin-top: 9.6875rem;
 }
 
 .headerContainer {
@@ -56,7 +56,7 @@ body {
   border-bottom: 0.125rem solid rgba(150, 163, 171, 0.5);
   padding: 0.625rem 0.125rem;
   margin-bottom: 1.25rem;
-  font-size: 0.875rem;
+  font-size: .9375rem;
   outline: 0;
 }
 
@@ -156,6 +156,10 @@ body {
     margin-top: 3.125rem;
   }
 
+  .container .leftSide input {
+    font-size: 1.0625rem;
+  }
+
   .container .rightSide .rightArrow {
     margin-left: 0;
     margin-top: 0;
@@ -166,6 +170,10 @@ body {
 @media (max-width: 26.875rem) {
   .main {
     margin-top: 0;
+  }
+
+  .container .leftSide input {
+    font-size: 1.0625rem;
   }
 
   .container .rightSide .grid {

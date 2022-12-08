@@ -18,6 +18,22 @@ const App = () => {
     }
   };
 
+  const handleHeight = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (!e.target.value.includes('.') && e.target.value.length > 2) {
+      setHeightField(+e.target.value / 100)
+    } else {
+      setHeightField(+e.target.value)
+    }
+  }
+
+  const handleWeight = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (!e.target.value.includes('.') && e.target.value.length > 3) {
+      setWeightField(+e.target.value / 100)
+    } else {
+      setWeightField(+e.target.value)
+    }
+  }
+
   const handleBackButton = () => {
     setToShow(null);
     setHeightField(0);
@@ -52,18 +68,20 @@ const App = () => {
             type='number'
             placeholder='Digite a sua altura. Ex: 1.65 (em metros)'
             value={heightField > 0 ? heightField : ''}
-            onChange={({ target }) =>
-              setHeightField(target.valueAsNumber /* +target.value */)
-            }
+            // onChange={({ target }) =>
+            //   setHeightField(target.valueAsNumber /* +target.value */)
+            // }
+            onChange={handleHeight}
             disabled={toShow ? true : false}
           />
           <input
             type='number'
             placeholder='Digite o seu peso. Ex: 60.0 (em kg)'
             value={weightField > 0 ? weightField : ''}
-            onChange={({ target }) =>
-              setWeightField(+target.value /* target.valueAsNumber */)
-            }
+            // onChange={({ target }) =>
+            //   setWeightField(+target.value /* target.valueAsNumber */)
+            // }
+            onChange={handleWeight}
             disabled={toShow ? true : false}
           />
           <button
