@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from 'react';
 import { toast, Toaster } from 'react-hot-toast';
 import styles from './App.module.css';
@@ -73,6 +74,7 @@ const App = () => {
             // }
             onChange={handleHeight}
             disabled={toShow ? true : false}
+            data-testid='input-height'
           />
           <input
             type='number'
@@ -83,10 +85,12 @@ const App = () => {
             // }
             onChange={handleWeight}
             disabled={toShow ? true : false}
+            data-testid='input-weight'
           />
           <button
             onClick={handleCalculateButton}
             disabled={toShow ? true : false}
+            data-testid='button-calcular'
           >
             Calcular
           </button>
@@ -101,7 +105,7 @@ const App = () => {
           )}
           {toShow && (
             <div className={styles.rightBig}>
-              <div className={styles.rightArrow} onClick={handleBackButton}>
+              <div className={styles.rightArrow} onClick={handleBackButton} data-testid="back-arrow">
                 <img src={leftArrowImage} alt='' width={25} />
               </div>
               <GridItem item={toShow} />
