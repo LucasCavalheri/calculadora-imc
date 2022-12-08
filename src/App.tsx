@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import styles from './App.module.css';
 import poweredImage from './assets/powered.png';
-import { levels, calculateImc } from './helpers/imc';
+import { levels } from './helpers/imc';
+import GridItem from './components/GridItem/GridItem';
 
 const App = () => {
   const [heightField, setHeightField] = useState<number>(0);
@@ -49,6 +50,11 @@ const App = () => {
           <button onClick={handleCalculateButton}>Calcular</button>
         </div>
         <div className={styles.rightSide}>
+          <div className={styles.grid}>
+            {levels.map((el, i) => (
+              <GridItem key={i} item={el}/>
+            ))}
+          </div>
         </div>
       </div>
     </div>
