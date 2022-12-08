@@ -15,7 +15,7 @@ Para instalar o projeto, siga estas etapas:
 git clone git@github.com:LucasCavalheri/calculadora-imc.git
 ```
 
-Entre na pasta que você acabou de clonar.
+* Entre na pasta que você acabou de clonar.
 
 Abra o terminal e digite:
 
