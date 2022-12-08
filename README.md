@@ -1,3 +1,12 @@
+## 📚 Tecnologias Usadas no Projeto:
+
+![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=yellow)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e)
+
 ## 🚀 Instalando Calculadora-IMC
 
 Para instalar o projeto, siga estas etapas:
@@ -52,8 +61,8 @@ npx cypress open
 
 <img src="cypress-pag-2.png" width="750" height="500" />
 
-* Clique em "App" e pronto! Os testes começarão a rodar! Caso queira pará-los ou reiniciar os testes, é só apertar a tecla R (Ou Clicar no símbolo ao lado do número de acertos e erros)
+* Clique em "App" e pronto! Os testes começarão a rodar! Caso queira pará-los ou reiniciar os testes, é só apertar a tecla R (Ou Clicar no símbolo ao lado do número de acertos e erros).
 
 ## 🤝 Feedbacks
 
-Caso queria dar um feedback, pode me mandar mensagem no meu <a href="https://www.linkedin.com/in/lucas-cavalheri/">LinkedIn</a>
+Caso queria dar um feedback, pode me mandar mensagem no meu <a href="https://www.linkedin.com/in/lucas-cavalheri/">LinkedIn.</a>
