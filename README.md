@@ -1,4 +1,4 @@
-## 🚀 Instalando Calculadora_IMC
+## 🚀 Instalando Calculadora-IMC
 
 Para instalar o projeto, siga estas etapas:
 
@@ -30,7 +30,9 @@ Para executar os testes, primeiro você precisa estar com o projeto rodando no s
 npm run dev
 ```
 
-Após isso, você precisa executar o Cypress:
+Após isso, abra um outro terminal (sem fechar o que está rodando o npm run dev).
+
+Então execute o Cypress:
 
 ```
 npx cypress open
