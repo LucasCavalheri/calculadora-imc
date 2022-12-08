@@ -1,34 +1,57 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { useState } from 'react';
+import styles from './App.module.css';
+import poweredImage from './assets/powered.png';
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const [heightField, setHeightField] = useState<number>(0);
+  const [weightField, setWeightField] = useState<number>(0);
+
+  const handleCalculateButton = () => {
+    if (heightField && weightField) {
+      // Código
+    } else {
+      alert('Digite todos os campos.');
+    }
+  };
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className={styles.main}>
+      <header>
+        <div className={styles.headerContainer}>
+          <img src={poweredImage} alt='' width={150} />
+        </div>
+      </header>
+      <div className={styles.container}>
+        <div className={styles.leftSide}>
+          <h1>Calcule o seu IMC.</h1>
+          <p>
+            IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela
+            Organização Mundial de Saúde para calcular o peso ideal de cada
+            pessoa.
+          </p>
+          <input
+            type='number'
+            placeholder='Digite a sua altura. Ex: 1.65 (em metros)'
+            value={heightField > 0 ? heightField : ''}
+            onChange={({ target }) =>
+              setHeightField(target.valueAsNumber /* +target.value */)
+            }
+          />
+        </div>
+        <div className={styles.rightSide}>
+          <input
+            type='number'
+            placeholder='Digite o seu peso. Ex: 60.0 (em kg)'
+            value={weightField > 0 ? weightField : ''}
+            onChange={({ target }) =>
+              setWeightField(+target.value /* target.valueAsNumber */)
+            }
+          />
+          <button onClick={handleCalculateButton}>Calcular</button>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
