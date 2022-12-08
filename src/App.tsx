@@ -46,6 +46,7 @@ const App = () => {
             onChange={({ target }) =>
               setHeightField(target.valueAsNumber /* +target.value */)
             }
+            disabled={toShow ? true : false}
           />
           <input
             type='number'
@@ -54,8 +55,9 @@ const App = () => {
             onChange={({ target }) =>
               setWeightField(+target.value /* target.valueAsNumber */)
             }
+            disabled={toShow ? true : false}
           />
-          <button onClick={handleCalculateButton}>Calcular</button>
+          <button onClick={handleCalculateButton} disabled={toShow ? true : false}>Calcular</button>
         </div>
         <div className={styles.rightSide}>
           {!toShow && (
