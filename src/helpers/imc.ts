@@ -16,12 +16,12 @@ export const levels: Level[] = [
 export const calculateImc = (height: number, weight: number) => {
   const imc = weight / (height * height);
 
-  levels.forEach((el) => {
-    if (imc >= el.imc[0] && imc < el.imc[1]) {
-      el.yourImc = imc;
-      return el;
+  for (let i in levels) {
+    if (imc >= levels[i].imc[0] && imc < levels[i].imc[1]) {
+      levels[i].yourImc = +imc.toFixed(2);
+      return levels[i];
     }
-  })
+  }
 
   return null;
 };
