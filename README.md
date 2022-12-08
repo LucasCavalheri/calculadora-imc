@@ -30,9 +30,9 @@ Para executar os testes, primeiro você precisa estar com o projeto rodando no s
 npm run dev
 ```
 
-Após isso, abra um outro terminal (sem fechar o que está rodando o npm run dev).
+* Após isso, abra um outro terminal (sem fechar o que está rodando o npm run dev).
 
-Então execute o Cypress:
+* Então execute o Cypress:
 
 ```
 npx cypress open
