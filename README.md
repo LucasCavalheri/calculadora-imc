@@ -55,7 +55,7 @@ npx cypress open
 
 * Ao abri-lo, você verá essa tela:
 
-<img src="cypress-pag-1.png" width="750" height="500" />
+<img src="cypress-pag-1.png" />
 
 * Clique em "E2E Testing"
 
@@ -63,7 +63,7 @@ npx cypress open
 
 * Em seguida, você verá essa tela: 
 
-<img src="cypress-pag-2.png" width="750" height="500" />
+<img src="cypress-pag-2.png" />
 
 * Clique em "App" e pronto! Os testes começarão a rodar! Caso queira pará-los ou reiniciar os testes, é só apertar a tecla R (Ou Clicar no símbolo ao lado do número de acertos e erros).
 
