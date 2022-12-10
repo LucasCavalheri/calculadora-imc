@@ -1,3 +1,7 @@
+## :globe_with_meridians: Deploy no Vercel:
+
+<a href="https://calculadora-imc-mu-eight.vercel.app/">Calculadora IMC</a>
+
 ## 📚 Tecnologias Usadas no Projeto:
 
 ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
@@ -7,7 +11,7 @@
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![Cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e)
 
-## 🚀 Instalando Calculadora-IMC
+## 🚀 Instalando Calculadora IMC
 
 Para instalar o projeto, siga estas etapas:
 
